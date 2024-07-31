@@ -15,7 +15,7 @@ export default function Catogeries({ title }: cata) {
             <div className="flex justify-center mb-4">
                 {
                     title.map((catoger, i) => (
-                        <button className="border-2 border-gray-950 px-5 py-1 mx-2 rounded hover:bg-gray-200" onClick={() => { catogery(catoger) }}>{catoger}</button>
+                        <button key={i} className="border-2 border-gray-950 px-5 py-1 mx-2 rounded hover:bg-gray-200" onClick={() => { catogery(catoger) }}>{catoger}</button>
                     ))
                 }
 
